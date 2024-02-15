@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container-show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grup {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.kotak-kecil {
+    width: 120px;
+    height: 120px;
+    background-color:  #C43636;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.kotak-kecil img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 600px) {
+    .grup {
+        justify-content: flex-start;
+    }
+
+    .kotak-kecil {
+        width: 100%; 
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .kotak-kecil {
+        width: calc(25% - 20px); 
+    }
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+.logo { 
+    max-width: 100%;
+    height: auto;
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Menengahkan item di dalam flex container */
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #180101;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ffc107;
+}
+
+/* Menyesuaikan tata letak dan gaya bagian menu */
+.section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    width: 480px;
+    padding: 20px;
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    color: black;
+}
+
+input[type="email"],
+input[type="password"] {
+    background: rgba(187, 11, 11, 0.6);
+    color: black;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border: none;
+    background: #fff;
+    color: black;
+    margin: 0;
+}
